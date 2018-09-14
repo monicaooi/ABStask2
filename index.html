@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+	body{
+		background-color:aliceblue;
+		
+		}
+	h1{font-family: Raleway;
+		font-style: normal;
+		font-weight: 100;
+		font-size: 250%;
+			
+		}
+	p{font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	
+			}
+	</style>
+	
+<head>
+	
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+<script src="./data.js" ="text/javascript"></script>
+
+<title> </title>
+</head>
+
+<body>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiMTFvb2ltbyIsImEiOiJjamhobmF6ZjcwNTBhM2RtcHUzYXA0Z2UzIn0.ESHvQaFGrXF8vR5uJ4fJVw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+});
+
+map.on('load',function(){
+	map.addLayer({
+		'id': 'data',
+		'type': 'fill-extrusion',
+		'source':{
+			'type': 'geojson',
+			'data': data
+
+		},
+		'paint': {
+			'fill-extrusion-height':{
+				'property': 'go8pbos',
+				"stops": [
+				[0, 88],
+				[1, 10000]
+				]
+			},
+			'fill-extrusion-color':{
+				'property': 'go8pbos',
+				"stops": [
+				[0,'white'],
+				[44, 'green'],
+				[88, 'orange']
+				]
+			},
+			'fill-extrusion-opacity':0.9
+		}
+	})
+})
+</script>	
+	
+<meta charset="UTF-8">
+<title>Parents born overseas</title>
+</head>
+	
+	<h1><center>New South Wales: Parents <br>Born Overseas </center></h1>
+<body><br><br>
+<div class="ex1">
+<p><center>Australia is primarily made of up migrants coming from all over the world like Germany, Poland, Serbia, China, India, Korea etc. It is a multicultural country and policies that have been set up by the government “embraces our shared values and cultural traditions”, this is reflected on its immigration policies, prohibition on discrimination and equality policies that promote diversity such as the Special Broadcasting Service (SBS) which hosts the news and television programs in different languages.<br><br>  
+
+Australia, prior to the European settlement was home to many different aboriginal cultures and had between 200 and 400 active languages at one time. During the 20th century, the White Australia policy, or the Immigration Restriction Act 1901 was enacted, only allowing people of European descent to enter Australia. This was done to preserve the "British- ethno- cultural" identity of the Australian Nation. It was not until the 1970s when Australia adopted Multiculturalism, which the word has gone through different meanings throughout history. Multiculturalism was originally understood by the population “as a need for acceptance” for the many new Australians that originally came from different countries and still had attachment to their cultures. Then it was later understood as and expression of their cultural identity. Now it is used to refer to the fact that people in Australia have multiple cultural backgrounds. <br><br>
+
+Since the adoption of multiculturalism, Australia has since seen rising levels of immigration to Australia. This has led to Australia ranking 18th in the world for Net Migration Rate, ahead of Canada(20th) and the United State(29th). The Australian Bureau of Statistics compiled data for Ancestry by Country of Birth Parents in which the data identified less than 30 major backgrounds ranging from Chinese, Korean, English, Dutch and Serbian. Through this data analysis, we will explore the implications of, in very broad terms, “Multiculturalism”. </center></p><br><br></div>
+	
+	<p><center>Firstly, lets look at the geographical locations of parents born overseas in NSW: Both Parents, Father and Mother. Using </center></p><br><br
+	
+	
+	<img src="../Desktop/mapsforQGIS/fatherbornos.jpg" width="500px" class="contain">
+	<p>Father born Overseas</p> 
+	<br><br>
+<img src="../Desktop/mapsforQGIS/motherbornos.jpg" width="500px" class="contain">
+	<p>Mother born Overseas</p><br>
+	<img src="../Desktop/mapsforQGIS/bothparentbornos.jpg" width="500px" class="center">
+	<p>Both parents born Overseas</p> <br><br>
+	
+	<p><center>In the images above, we can see that both parents who are born overseas are more predominant below the latte line. 
+Fathers born overseas are dominant above the latte line and the city, the same almost goes for mothers born overseas. 
+</center></p><br><br>
+	
+	<p><center>Now, let look at the Total Personal Income by Sex.</center></p><br><br>
+	
+	<p>Education</p>
+	
+	<img src="../Desktop/mapsforQGIS/g16totmaleyr12.jpg" width="500px" class="center">
+	<p>Total male with achievement of year 12</p><br><br>
+	<img src="../Desktop/mapsforQGIS/g16totfemaleyr12.jpg" width="500px" class= "center"><br><br>
+	<p>Total female with achievement of year 12</p><br><br>
+	
+	<p>By looking at these two sets of graphs, there is a separation by the Latte line, which splits the Sydney  into two concentrated area, the north and the west. <br><br>
+Firstly, parents born overseas can be divided into two categories: humanitarian program which covers refugees, asylum seekers, onshore and offshore; and migration. <br><br>
+The United Nations Human Commission Rights (UNHCR) estimated, at the end of 2016, that there were 65.5 million people forcibly displaced in the world. Australia seeks to do its part in aiding these people to relocate and live a better life through its Humanitarian program.  The program offers to protect people who are seeking asylum or refuge onshore and offshore. In 2015-16, the Humanitarian program was set at 13,750 places and a total of 13,765 visas were granted under the annual program. In 2015-16, 77 026 people applied under the offshore program component compared with 62,946 in 2014-15. In the same year, Australia granted 17,555 humanitarian program grants which included refugees, special humanitarian program and onshore. A total of 15,552 visas were granted offshore. <br><br>
+The top 10 countries of birth that were granted were: Iraq, Syria, Burma, Afghanistan, Congo, Bhutan, Somalia, Iran, Ethiopia, Eritrea and other. <br><br>
+In an article by The Guardian, a research found that Refugees integrate well especially in regional areas. Researchers surveyed 214 refugees: 155 adults and 59 children from Syria, Iraq, Afghanistan who settled in Queensland across Brisbane, Logan, Toowoomba. Of this survey, 81% found it easy to make friends in regional Toowoomba, 82% of children felt they belonged to the local community. The study also found that the unemployment rate among the refugee was high, as most refugees are putting off looking for a job until their english is better. <br><br>
+Refugees represent 3.6% of Australia’s total population and make up 10% of migration.<br><br>
+		
+The other type of movement that results in parents being born overseas is migration via visas as permanent residence the perhaps to become an Australian, is Migration.<br><br>
+Since the 18th century Australia has had many people especially from Britain migrate to Australia. The United Kingdom was the primary source of the country for permanent residence in Australia, however since 2010, the China has become the primary source and is increasing to this day. Under the migration program, in 2015- 16, a total of 189 770 people were granted permanent visas. The migration population makes 28.2% of the total Australian population.<br><br>
+The top 10 countries that migrant come from, according to the Australian migration office, the United Kingdom, New Zealand, China, India, Philippines, Vietnam, Italy, South Africa, Malaysia, Germany. <br><br>
+		
+</p>
+	
+<p>These are maps that shows the Europeans and Asians domiance in Sydney. I have distinguished between these two becuase these are where the majority of people come from, continent wise. </p>
+	
+	<img src="../Desktop/absdata/asiatotlatteline.jpg" width="500px" class="contain"><br>
+	<p>The image above is people from the content ASIA, in Sydney and where they are, which is I think is eaqually across Sydney, but more predominant below the latte line. </p><br><br>
+	<img src="../Desktop/absdata/europetotlatteline.jpg" width="500px" class="contain"><br>
+	<p> The same goes for people from EUROPE, it is not limited to one side of the latte line, but more concentrated in the city area and above the line.</p><br><br>
+	
+<p>Now, lets look at the total household Income/Week($)</p>
+	
+	<img src="../Desktop/absdata/totHI1-999.jpg" width="500px" class="contain"><br>
+	<p>The first set of Household Income is from 1-999.</p><br><br>
+	<img src="../Desktop/absdata/totHI1000_3000.jpg" width="500px" class="contain"><br>
+	<p>The next one is from 1000-3999</p><br><br>
+	<img src="../Desktop/absdata/totHI4000more.jpg" width="500px" class="contain"><br>
+	<p>This last one is More than 4000</p><br>
+	
+	<p>The first and second data are quite similar, but the last one, there is a clear concentration of people earning more than 4000/week above the latte line </p><br><br>
+	
+	
+	<p>Through these analysis, we can see that Location matters- it shows who has better access to jobs, housing, community services, transport and education. According to the Sydney Mornign Herald, the Latte line is 'Splitting the work force'. White collared jobs are concentrated in the north and the east, which is where we see the people earning more that 4000, and these people are most likey to have better education and housing.<br>
+	Australia played their part in taking in Refugees, who are mostly people with no money, or education as they had to leave everything behind take, and take children somewhere safe and these children most probably skip out a bit in their education.<br>People immigrating through visas, especially those brining their family, have children that would need to continue to study, and the level of study might be different, it may be more advance or behind, depending on which country they came from.<br><br>
+	</p>
+
+	
+	
+	
+</body>
+</html>
